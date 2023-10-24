@@ -1,0 +1,619 @@
+:root {
+    --base-color: #fff;
+    --base-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--base-font-family)
+}
+
+section {
+    min-height: 35rem;
+}
+
+article {
+    width: 90%;
+}
+
+#headerBlock {
+    position: relative;
+}
+
+#_headerBlock nav {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: transparent;
+    height: 5.375rem;
+    /* border: 2px solid red; */
+}
+
+#_headerBlock nav article {
+    width: 78%;
+    margin: 0 auto;
+    /* border: 2px solid white; */
+    display: flex;
+    align-items: center;
+    font-family: var(--base-font-family);
+}
+
+#_headerBlock nav article > .leftNav {
+    width: 50%;
+} 
+
+#_headerBlock nav article > .rightNav {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#_headerBlock nav article .rightNav ul {
+    display: flex;
+    align-items: center;
+}
+
+#_headerBlock nav article .rightNav ul a {
+    padding: 5px 10px;
+    background-color: red;
+    text-decoration: none;
+    color: var(--base-color);
+    font-weight: 650;
+    border-radius: 4px;   
+}
+
+select {
+    padding: 5px 10px;
+    border-radius: 4px;
+    background: transparent;
+    color: var(--base-color);
+}
+
+.languageBlock span {
+    position: absolute;
+    top: 29px;
+    left: -30px;
+    color: white;
+}
+    
+#_headerBlock nav article .rightNav .languageBlock {
+    padding: 30px 20px;
+    position: relative;
+}
+
+main {
+    width: 65%;
+    height: 300px;
+    /* border: 2px solid white; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: var(--base-color);
+    text-align: center;
+    padding: 30px;
+    line-height: 3.5em;
+}
+
+main h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+main p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+main h3 {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+}
+
+main .searchBlock div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 0;
+}
+
+/* main label {
+    position: absolute;
+    left: 250px;
+} */
+
+main input {
+    transition: color 250ms cubic-bezier(0.5, 0, 0.1, 1) 0s;
+    width: 320px;
+    height: 60px;
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    color: var(--base-color);
+}
+
+main button {
+    width: 180px;
+    height: 60px;
+    background: red;
+    color: var(--base-color);
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+section figure img {
+    width: 1350px;
+    height: 700px;
+    background-size: contain;
+    transform: scale(1.25) translateY(-10%);
+}
+
+section figure div {
+    background: rgb(0 0 0 / 40%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+/* -------enjoyBlock-------- */
+
+#_enjoyBlock {
+    background-color: rgb(0,0,0);
+    color: white;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#_enjoyBlock article {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    flex-basis: 80%;
+    height: 80%;
+    /* border: 2px solid white; */
+}
+
+#_enjoyBlock article .enjoyLeft {
+    flex-basis: 50%;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+#_enjoyBlock article .enjoyLeft h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 4.5rem;
+}
+
+#_enjoyBlock article .enjoyLeft p {
+    font-size: 20px;
+    line-height: 1.7rem;
+}
+
+#_enjoyBlock article .enjoyRight {
+    /* border: 2px solid red; */
+    flex-basis: 50%;
+    height: 90%;
+    display: flex;  
+}
+
+#_enjoyBlock article .enjoyRight .tvBlock {
+    position: relative;
+}
+
+#_enjoyBlock article .enjoyRight img {
+    position: absolute;
+    z-index: 1;
+}
+
+#_enjoyBlock article .enjoyRight .videoBlock video {
+    width: 387px;
+    height: 304px;
+    position: absolute;
+    top: 40px;
+    left: 65px;
+}
+
+/* --------StrangerThings---------- */
+
+#seperator {
+    background-color: rgb(35,35,35);
+    width: 100%;
+    height: 7px;
+}
+
+#_strangeThings {
+    background-color: black;
+    padding: 5rem;
+}
+
+#_strangeThings article {
+    height: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#_strangeThings aside {
+    width: 50%;
+
+}
+
+#_strangeThings .leftStrange #_leftMainDiv {
+    position: relative;
+    text-align: center;  
+}
+
+#_leftMainDiv>img {
+    width: 80%;
+    height: 400px;
+}
+
+#_strangeThings .leftStrange #_leftMainDiv .innerDiv {
+    width: 45%;
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 1);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    min-width: 15rem;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 2em 0 rgba(0, 0, 0, 1);
+    border-radius: 0.75rem;
+    z-index: 1;
+}
+
+#_strangeThings .leftStrange #_leftMainDiv .innerDiv .innerLeft {
+    margin: 0 1rem 0 0;;
+}
+
+#_strangeThings .leftStrange #_leftMainDiv .innerDiv .innerLeft>img {
+    height: 3.5rem;
+}
+
+.innerMid {
+    text-align: left;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 0.3rem 0;
+}
+
+.innerMid .st {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+}
+
+.download {
+    color: #0071eb;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.innerRight {
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif);
+    height: 3.75rem;
+    width: 3rem;
+    outline: 2px solid rgba(0, 0, 0, 1);
+    outline-offset: -2px;
+    display: block;
+    background-size: 100%;
+    content: '';
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.rightStrange {
+    color: white;
+    text-align: left;
+    padding-left: 0.375rem;
+}
+
+.rightStrange div {
+    width: 100%;
+    height: 60%;
+}
+
+.rightStrange h2 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.rightStrange p {
+    font-size: 1.5rem;
+    font-weight: 400;
+} 
+
+/* -------------watch section------------------ */
+
+#_watch {
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+#_watch article {
+    margin: auto;
+    /* border: 2px solid white; */
+    flex-basis: 80%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+}
+
+#_watch article aside {
+    flex-basis: 50%;
+}
+
+#_watch .leftBox {
+    /* border: 2px solid green; */
+    padding: 0 20px 0 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#_watch .leftBox h2 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+#_watch .leftBox p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#_watch .rightBox .tvBlock {
+    position: relative;
+    height: 400px;
+    width: 80%;
+}
+
+#_watch .rightBox .tvBlock img {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+#_watch .rightBox .tvBlock video {
+    width: 336px;
+    height: 395px;
+    position: absolute;
+    left: 100px;
+    top: -59px;
+}
+
+
+/* ----------------kidsBlock--------------------- */
+
+#_kids {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#_kids article {
+    /* border: 2px solid white; */
+    height: 400px;
+    display: flex;
+}
+
+#_kids article aside {
+    flex-basis: 50%;
+}
+
+#_kids article .leftKidsBox {
+    /* border: 2px solid green; */
+    padding: 0 20px 0 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#_kids article .leftKidsBox img {
+    width: 80%;
+    height: 100%;
+}
+
+.rightKidsBox {
+    color: white;
+    text-align: left;
+    padding-left: 0.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.rightKidsBox div {
+    width: 90%;
+    height: 60%;
+}
+
+.rightKidsBox h2 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.rightKidsBox p {
+    font-size: 1.5rem;
+    font-weight: 400;
+} 
+
+/* ----------FAQ--------------- */
+
+#_faq {
+    background-color: black;
+    color: white;
+}
+
+#_faq article {
+    text-align: center;
+    margin: auto;
+    padding: 30px 0;
+    /* border: 2px solid white; */
+}
+
+#_faq article h2 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+#_faq article div ul {
+    /* border: 2px solid red; */
+    width: 90%;
+    margin: 1.5rem auto;
+}
+
+#_faq article div ul button {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 0 20px;
+    background-color: rgb(45,45,45);
+    color: white;
+    margin: 7px 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+}
+
+#_faq article div ul button:hover {
+    background-color: rgb(73,73,73);
+}
+
+#_faq article .emailInput {
+    margin: 20px;
+} 
+
+#_faq article .emailInput h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+#_faq article .emailInput > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 8px;
+}
+
+#_faq article .emailInput > div input {
+    width: 320px;
+    height: 50px;
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    color: var(--base-color);
+}
+
+#_faq article .emailInput > div button {
+    width: 180px;
+    height: 53px;
+    background: red;
+    color: var(--base-color);
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/* ---------Footer-------------- */
+
+footer {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(179,179,179);
+    height: 450px;
+}
+
+footer article {
+    width: 80%;
+    height: 350px;
+    /* border: 2px solid white; */
+}
+
+footer article ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+    line-height: 2rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin: 0;
+    padding: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+footer article a {
+    color: rgb(179,179,179);
+}
+
+footer select {
+    padding: 7px 20px;
+    border-radius: 4px;
+    background: transparent;
+    color: var(--base-color);
+    margin-bottom: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
